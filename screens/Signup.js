@@ -21,6 +21,12 @@ export default function App() {
         style={styles.button1}
         //onPress={onPress}
       >
+        <Image  source={require('../assets/fb-icon.png')}
+         style={{
+          marginRight:5,
+          height: 25,
+          width: 25
+        }}/>
         <Text style={styles.text}>Sign in with Facebook</Text>
       </TouchableOpacity>
       </View>
@@ -31,7 +37,12 @@ export default function App() {
         style={styles.button2}
         //onPress={onPress}
       >
-            
+         <Image  source={require('../assets/gplus-icon.png')}
+         style={{
+          marginRight:5,
+          height: 25,
+          width: 25
+        }}/>   
         <Text style={styles.text}>Sign in with Google+</Text>
       </TouchableOpacity>
       
@@ -123,7 +134,8 @@ const styles = StyleSheet.create({
     fontWeight:"bold",
     marginLeft:40,
     marginRight: 40,
-    borderRadius: 5
+    borderRadius: 5,
+    flexDirection:'row'
   },
   button2:{
     alignItems: "center",
@@ -134,7 +146,8 @@ const styles = StyleSheet.create({
     fontWeight:'bold',
     marginLeft:40,
     marginRight: 40,
-    borderRadius: 5
+    borderRadius: 5,
+    flexDirection:'row'
   },
   input: {
     height: 40,
@@ -144,7 +157,8 @@ const styles = StyleSheet.create({
     padding: 10,
     backgroundColor:"white",
     marginLeft:40,
-    marginRight: 40
+    marginRight: 40,
+    borderRadius:5
   },
   login:{
     backgroundColor:'#FFFF00',
@@ -164,7 +178,7 @@ const styles = StyleSheet.create({
      alignItems:'center',
      justifyContent:'center',
      alignSelf:'center',
-     marginTop: 40,
+     marginTop: 28,
      marginBottom:40
      
   },
